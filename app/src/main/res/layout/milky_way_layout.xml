@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="milkyWayItem"
+            type="com.cherish.nasasearchapp.presentation.milkyway.MilkyWayItem" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content">
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView_wrapper"
         android:layout_width="0dp"
@@ -53,6 +63,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    imageUrl="@{milkyWayItem.image}"
                     android:src="@drawable/ic_launcher_background"
                     android:scaleType="fitXY"/>
 
@@ -67,7 +78,8 @@
                         android:layout_width="@dimen/dimen_0"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/nunito_sans_bold"
-                        android:text="The Milky Way Center Aglow with Dust"
+                        android:text="@{milkyWayItem.title}"
+                        tools:text="The Milky Way Center Aglow with Dust"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -79,7 +91,8 @@
                         android:id="@+id/gsfc"
                         android:layout_width="@dimen/dimen_0"
                         android:layout_height="wrap_content"
-                        android:text="GSFC"
+                        tools:text="GSFC"
+                        android:text="@{milkyWayItem.center}"
                         app:layout_constraintTop_toBottomOf="@id/title"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintHorizontal_bias="1"
@@ -102,9 +115,10 @@
                     <TextView
                         android:layout_width="@dimen/dimen_0"
                         android:layout_height="wrap_content"
-                        android:text="2015-03-21"
+                        tools:text="2015-03-21"
                         android:textColor="@color/white"
                         android:textSize="12sp"
+                        android:text="@{milkyWayItem.date}"
                         android:fontFamily="@font/nunito_sans"
                         android:layout_marginStart="@dimen/dimen_10"
                         app:layout_constraintTop_toTopOf="@id/gsfc"
@@ -116,3 +130,4 @@
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

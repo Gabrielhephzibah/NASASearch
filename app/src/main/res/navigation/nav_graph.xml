@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/milkyWayListFragment"
-        android:name="com.cherish.nasasearchapp.MilkyWayListFragment"
+        android:name="com.cherish.nasasearchapp.presentation.milkyway.MilkyWayFragment"
         android:label="fragment_milky_way_list"
         tools:layout="@layout/fragment_milky_way" />
     <fragment
         android:id="@+id/milkyWayDetailFragment"
-        android:name="com.cherish.nasasearchapp.MilkyWayDetailFragment"
+        android:name="com.cherish.nasasearchapp.presentation.milkywaydetails.MilkyWayDetailFragment"
         android:label="fragment_milky_way_detail"
         tools:layout="@layout/fragment_milky_way_detail" />
 </navigation>

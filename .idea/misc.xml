@@ -8,10 +8,11 @@
         <entry key="app/src/main/res/layout/activity_content.xml" value="0.2109375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.16485507246376813" />
-        <entry key="app/src/main/res/layout/fragment_milky_way.xml" value="0.22100067138671875" />
+        <entry key="app/src/main/res/layout/fragment_milky_way.xml" value="0.21462264150943397" />
         <entry key="app/src/main/res/layout/fragment_milky_way_detail.xml" value="0.1403985507246377" />
         <entry key="app/src/main/res/layout/milky_way_details_layout.xml" value="0.13872118498149666" />
         <entry key="app/src/main/res/layout/milky_way_layout.xml" value="0.2109375" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/back_arrow.xml" value="0.1445" />
       </map>
     </option>
   </component>
